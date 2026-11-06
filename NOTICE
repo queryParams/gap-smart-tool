@@ -1,0 +1,32 @@
+GAP Smart Tool
+Copyright (C) 2026 queryParams
+Бесплатно, не для продажи: лицензия CC BY-NC-ND 4.0 (LICENSE, перевод — LICENSE.ru.txt).
+Официальный источник: https://github.com/queryParams/gap-smart-tool
+
+GAP Smart Tool — независимый проект, он не связан с Geely, ECARX, Neusoft и их партнёрами и не одобрен ими.
+Geely, Atlas и другие названия — товарные знаки их владельцев и упоминаются только для указания совместимости.
+Шрифт Geely в приложение не входит: оно берёт его из системы головного устройства, если он там есть.
+
+Сторонние компоненты в приложении
+---------------------------------
+
+sherpa-onnx — https://github.com/k2-fsa/sherpa-onnx
+  Apache License 2.0. Copyright Xiaomi Corporation and the k2-fsa contributors.
+
+ONNX Runtime — https://github.com/microsoft/onnxruntime
+  MIT License. Copyright Microsoft Corporation.
+
+Модель распознавания речи — sherpa-onnx-streaming-zipformer-small-ru-vosk-int8 (Vosk, Alpha Cephei)
+  https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-small-ru-vosk-int8-2025-08-16
+  Apache License 2.0.
+
+Модели распознавания на выбор (кладутся отдельно, с флешки):
+  Vosk большая — Alpha Cephei, https://huggingface.co/alphacep/vosk-model-ru. Apache License 2.0.
+  GigaAM v3 — https://github.com/salute-developers/GigaAM. MIT License. Copyright (c) 2024 GigaChat Team.
+
+Голос — Piper ru_RU «irina» (medium) — https://github.com/rhasspy/piper
+  Модель обучена на записях голоса «Irina» проекта RHVoice (https://github.com/RHVoice/RHVoice).
+  Ею заранее озвучены голосовые ответы приложения; сама модель в приложение не входит.
+
+Шрифт Saira (значок приложения) — https://fonts.google.com/specimen/Saira
+  SIL Open Font License 1.1. Copyright The Saira Project Authors (Omnibus-Type).

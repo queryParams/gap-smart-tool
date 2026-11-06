@@ -1,0 +1,47 @@
+name: Что-то не работает
+description: Сообщить о проблеме с GAP Smart Tool
+labels: ["проблема"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        GAP Smart Tool работает **только на Geely Atlas Pro** с прошивкой ГУ `SW0NL3B0202H5177.00093`.
+        На других машинах и прошивках приложение не работает намеренно — это не ошибка, и поддержка других
+        прошивок не планируется.
+  - type: input
+    id: car
+    attributes:
+      label: Машина
+      description: Модель и год, например «Geely Atlas Pro 2023»
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Прошивка головного устройства
+      description: В настройках ГУ, в сведениях о системе — строка вида SW0NL3B0202H5177.00093
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия GAP Smart Tool
+      description: Внизу меню приложения, под «Условия»
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      description: Что делали, что ожидали и что получилось. Если это голосовая команда — какую фразу сказали.
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Журнал
+      description: |
+        В приложении: «Журнал» → «Сохранить журнал на флешку», затем перетащите сюда файл log.txt из папки gaptool_… на флешке.
+        Если приложение не запускается — приложите install.txt из папки gaptool_…, которую флешка создаёт при установке.
+    validations:
+      required: true
