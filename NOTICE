@@ -16,7 +16,7 @@ Geely, Atlas и другие названия — товарные знаки и
 
 sherpa-onnx — https://github.com/k2-fsa/sherpa-onnx
   Apache License 2.0. Copyright Xiaomi Corporation and the k2-fsa contributors.
-  Java-классы в app/src/main/java/com/k2fsa/sherpa/onnx скопированы из sherpa-onnx v2.0.1 (kotlin-api);
+  Java-классы в app/src/main/java/com/k2fsa/sherpa/onnx взяты из sherpa-onnx v2.0.1 (java-api и kotlin-api);
   в APK входит библиотека libsherpa-onnx-jni.so той же версии.
 
 ONNX Runtime — https://github.com/microsoft/onnxruntime
@@ -34,12 +34,12 @@ ONNX Runtime — https://github.com/microsoft/onnxruntime
 Голос — Piper ru_RU «irina» (medium) — https://github.com/rhasspy/piper
   Модель обучена на записях голоса «Irina» проекта RHVoice (https://github.com/RHVoice/RHVoice); лицензия набора
   записей авторами модели не указана. Модель в проект и в APK не входит: ею озвучены готовые ответы приложения
-  (assets/voice, tools/make_voice.py).
+  (app/src/main/assets/voice, tools/make_voice.py).
 
 Шрифт Saira (значок приложения) — https://fonts.google.com/specimen/Saira
   SIL Open Font License 1.1. Copyright The Saira Project Authors (Omnibus-Type). В значке — контуры букв;
   сам шрифт в проект не входит.
 
 eSpeak NG — https://github.com/espeak-ng/espeak-ng
-  GNU GPL-3.0. Используется только при сборке словаря произношения (tools/make_lexicon.py);
+  GNU GPL-3.0. Используется только при сборке на ПК: словарь произношения (tools/make_lexicon.py) и обучающие фразы (tools/asr_loop.py);
   tools/tts_lexicon.txt построен им. В приложение не входит.
